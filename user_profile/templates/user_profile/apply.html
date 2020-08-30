@@ -1,0 +1,14 @@
+{% extends 'user_profile/base.html' %}
+
+{% block content %} 
+    <div class="container-float">
+        <p>Profile </p>
+    </div>
+
+    <div id = "info" class="container-float">
+        <p>Please make sure that the following information is up-to-date and accurate. Updates made 
+            to your profile will be reflected in any existing applications.
+        </p>
+        {{ form.as_p }}
+    </div>
+{% endblock content %}
